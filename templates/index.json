@@ -36,6 +36,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/half-of-an-avocado.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "image_behavior": "none",
