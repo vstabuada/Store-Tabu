@@ -1429,11 +1429,6 @@
         "default": false
       },
       {
-        "type": "richtext",
-        "id": "font_text",
-        "label": "tamanho da fonte"
-      },
-      {
         "type": "checkbox",
         "id": "show_cart_note",
         "label": "t:settings_schema.cart.settings.show_cart_note.label",
