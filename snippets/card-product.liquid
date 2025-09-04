@@ -325,6 +325,11 @@
             {%- endif -%}
           </div>
 
+          {% comment %}
+
+
+          
+
           {% if card_product.tags contains "Sem Desconto PIX" %}
               
             {% else %}
@@ -338,6 +343,10 @@
 
           {% endif %}
 
+
+
+
+          {% endcomment %}
 
         </div>
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
