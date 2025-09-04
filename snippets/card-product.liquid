@@ -139,7 +139,7 @@
               percent, value, sale
             {% endcomment %}
             {% assign sale_badge_bgcolor = "#000000" %}
-            {% assign sale_badge_color = "#ffffff" %}
+            {% assign sale_badge_textcolor = "#ffffff" %}
             {% comment %}
               color-{{ settings.sale_badge_color_scheme }}
             {% endcomment %}
@@ -149,7 +149,7 @@
               <span
                 id="Badge-{{ section_id }}-{{ card_product.id }}"
                 class="badge badge--bottom-left"
-                style="background-color: {{ sale_badge_bgcolor }}; color: {{ sale_badge_color }};"  
+                style="background-color: {{ sale_badge_bgcolor }}; color: {{ sale_badge_textcolor }};"  
               > 
                 {{- 'products.product.on_sale' | t -}}
               </span>
