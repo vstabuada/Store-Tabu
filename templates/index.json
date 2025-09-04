@@ -15,8 +15,62 @@
         "slide_YMfCyC": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/herobanner1.jpg",
-            "image_overlay_opacity": 40,
+            "image": "shopify://shop_images/herobanner1_53965974-cb9f-4d5b-9583-ca6325f1e4b2.jpg",
+            "image_overlay_opacity": 50,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Veja tudo",
+            "link": "shopify://collections/all",
+            "button_style_secondary": true,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-4"
+          }
+        },
+        "slide_9GHT4J": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/herobanner2.jpg",
+            "image_overlay_opacity": 50,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Veja tudo",
+            "link": "shopify://collections/all",
+            "button_style_secondary": true,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-4"
+          }
+        },
+        "slide_z4Tqf9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/herobanner3.jpg",
+            "image_overlay_opacity": 50,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Veja tudo",
+            "link": "shopify://collections/all",
+            "button_style_secondary": true,
+            "show_text_box": false,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-4"
+          }
+        },
+        "slide_LCE8tw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/herobanner4.png",
+            "image_overlay_opacity": 50,
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -32,7 +86,10 @@
         }
       },
       "block_order": [
-        "slide_YMfCyC"
+        "slide_YMfCyC",
+        "slide_9GHT4J",
+        "slide_z4Tqf9",
+        "slide_LCE8tw"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
