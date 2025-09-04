@@ -161,8 +161,8 @@
 
               {% elsif sale_badge_type == "percent" %}
 
-                {% assign sale_badge_percent = card_product.compare_at_price | times: 100  %}
-                {% assign sale_badge_percent = sale_badge_percent |  divided_by: card_product.price %}
+                {% assign sale_badge_percent = card_product.price | times: 100  %}
+                {% assign sale_badge_percent = sale_badge_percent |  divided_by: card_product.compare_at_price %}
                 
                 <span
                   id="Badge-{{ section_id }}-{{ card_product.id }}"
