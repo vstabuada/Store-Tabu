@@ -1259,12 +1259,6 @@
         "default": "scheme-5"
       },
       {
-        "type": "color_scheme",
-        "id": "sold_out_badge_color_scheme",
-        "label": "t:settings_schema.badges.settings.sold_out_badge_color_scheme.label",
-        "default": "scheme-3"
-      },
-      {
         "type": "color_background",
         "id": "sale_badge_custom_background_color",
         "label": "Cor de fundo personalizada do selo de promoção",
@@ -1275,6 +1269,31 @@
         "id": "sale_badge_custom_color",
         "label": "Cor personalizada do texto do selo de promoção",
         "default": "#000000"
+      },
+      {
+        "type": "color_scheme",
+        "id": "sold_out_badge_color_scheme",
+        "label": "t:settings_schema.badges.settings.sold_out_badge_color_scheme.label",
+        "default": "scheme-3"
+      },
+      {
+        "type": "select",
+        "id": "sale_badge_type",
+        "label": "Tipo de selo de promoção",
+        "options": [
+          {
+            "value": "sale",
+            "label": "Promoção"
+          },
+          {
+            "value": "percent",
+            "label": "Porcentagem"
+          },
+          {
+            "value": "value",
+            "label": "Diferença"
+          }
+        ]
       }
     ]
   },
