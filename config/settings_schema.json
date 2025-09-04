@@ -1262,13 +1262,13 @@
         "type": "color",
         "id": "sale_badge_custom_background_color",
         "label": "Cor de fundo personalizada do selo de promoção",
-        "default": "#ffffff"
+        "default": "#000000"
       },
       {
         "type": "color",
         "id": "sale_badge_custom_color",
         "label": "Cor personalizada do texto do selo de promoção",
-        "default": "#000000"
+        "default": "#ffffff"
       },
       {
         "type": "color_scheme",
