@@ -333,7 +333,7 @@
             {% assign pix_discount = settings.pix_discount_percentage %}
             {% assign real_discount = card_product.price | times: pix_discount |  divided_by: 100  %}
 
-            <div class="pix_price">ou por {{ card_product.tags }} apenas <span>{{ card_product.price | minus: real_discount | money }}</span> no pix!</div>
+            <div class="pix_price">ou por apenas <span>{{ card_product.price | minus: real_discount | money }}</span> no pix!</div>
           {% endif %}
 
           {% endif %}
