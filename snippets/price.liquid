@@ -137,7 +137,9 @@
         <hr style="margin: 4px;">
 
         <span class="price-item price-item--sale price-item--last" style="color: #777; font-size: 0.9em;">
-          ou
+          {% if settings.enable_pix_discount %}
+            ou
+          {% endif %}
           <span style="color: #333;">{{ money_price }}</span>
           <br>em até {{ installments -}}x de {{ installment_value | money }} sem juros
         </span>
