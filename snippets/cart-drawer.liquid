@@ -513,10 +513,10 @@
             {%- endif -%}
           </div>
 
-            {% assign min_for_shipping = 200000 %}
-
-            {{cart.total_price}}
-            {{min_for_shipping}}
+            {% assign min_for_shipping = 200000 %} 
+            {% comment %}
+              o numero acima esta em centavos (2000,00)
+            {% endcomment %}
 
             {% if cart.total_price > 0 %}
 
@@ -532,14 +532,14 @@
                 <div class="free_shipping">
                   <div class="shipping_bar-{{rounded_percent}}"></div>
                   <div class="second_shipping_bar"></div>
-                  <h2>Adicione mais {{remaining | money}} asdpara ganhar <span class="frete_gratis">frete grátis</span>!</h2>
+                  <h2 class="free_shipping_text">Adicione mais {{remaining | money}} para ganhar <span class="frete_gratis">frete grátis</span>!</h2>
                 </div>
 
                 {% else %}
 
                 <div class="free_shipping free_shipping--qualified">
                   <div></div>
-                  <h2>Você ganhou <span class="frete_gratis">frete grátis</span>!</h2>
+                  <h2 class="free_shipping_text">Você ganhou <span class="frete_gratis">frete grátis</span>!</h2>
                 </div>
 
               {% endif %}
