@@ -1449,6 +1449,18 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
+      },
+      {
+        "type": "checkbox",
+        "id": "toggle_free_shipping",
+        "label": "Ativar frete grátis por meta de valor total",
+        "default": false
+      },
+      {
+        "type": "number",
+        "id": "minimum_for_free_shipping",
+        "label": "Valor mínimo para frete grátis",
+        "default": 100
       }
     ]
   }
