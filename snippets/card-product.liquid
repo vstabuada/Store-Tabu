@@ -135,9 +135,6 @@
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
 
             {% assign sale_badge_type = settings.sale_badge_type %} 
-            {% comment %}
-              percent, value, sale
-            {% endcomment %}
             {% assign sale_badge_bgcolor = settings.sale_badge_custom_background_color %}
             {% assign sale_badge_textcolor = settings.sale_badge_custom_color %}
             {% comment %}
@@ -178,8 +175,6 @@
                 >
                   -{{- sale_badge_percent -}}%
                 </span>
- 
-              
             {% endif %}
             {%- endif -%}
           </div>
@@ -330,7 +325,7 @@
             {%- endif -%}
           </div>
 
-          {% assign pix_discount = 10 %}
+          {% assign pix_discount = settings.pix_discount_percentage %}
           {% assign real_discount = card_product.price | times: pix_discount |  divided_by: 100  %}
 
           <div class="pix_price">ou por apenas <span>{{ card_product.price | minus: real_discount | money }}</span> no pix!</div>
