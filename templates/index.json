@@ -17,14 +17,14 @@
           "settings": {
             "image": "shopify://shop_images/herobanner1_53965974-cb9f-4d5b-9583-ca6325f1e4b2.jpg",
             "image_overlay_opacity": 50,
-            "heading": "",
+            "heading": "Red Dead Redemption 2",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "Veja tudo",
             "link": "shopify://collections/all",
             "button_style_secondary": true,
             "show_text_box": false,
-            "box_align": "bottom-center",
+            "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-4"
@@ -35,14 +35,14 @@
           "settings": {
             "image": "shopify://shop_images/herobanner2.jpg",
             "image_overlay_opacity": 50,
-            "heading": "",
+            "heading": "God of War",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "Veja tudo",
             "link": "shopify://collections/all",
             "button_style_secondary": true,
             "show_text_box": false,
-            "box_align": "bottom-center",
+            "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-4"
@@ -53,14 +53,14 @@
           "settings": {
             "image": "shopify://shop_images/herobanner3.jpg",
             "image_overlay_opacity": 50,
-            "heading": "",
+            "heading": "Days Gone",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "Veja tudo",
             "link": "shopify://collections/all",
             "button_style_secondary": true,
             "show_text_box": false,
-            "box_align": "bottom-center",
+            "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-4"
@@ -71,14 +71,14 @@
           "settings": {
             "image": "shopify://shop_images/herobanner4.png",
             "image_overlay_opacity": 50,
-            "heading": "",
+            "heading": "Minecraft",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "Veja tudo",
             "link": "shopify://collections/all",
             "button_style_secondary": true,
             "show_text_box": false,
-            "box_align": "bottom-center",
+            "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-4"
@@ -90,6 +90,9 @@
         "slide_9GHT4J",
         "slide_z4Tqf9",
         "slide_LCE8tw"
+      ],
+      "custom_css": [
+        ".slider-buttons {background-color: #555;}"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
