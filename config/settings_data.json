@@ -129,7 +129,7 @@
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
     "toggle_free_shipping": true,
-    "minimum_for_free_shipping": 5000,
+    "minimum_for_free_shipping": 1500,
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
