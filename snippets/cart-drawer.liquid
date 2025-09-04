@@ -520,6 +520,66 @@
 
             {% if cart.total_price > 0 %}
 
+              <style>
+                .free_shipping {
+                  position: relative;
+                  background: #f3f3f3;
+                  border-radius: 8px;
+                  padding: 10px 20px;
+                  margin-bottom: 20px;
+                  overflow: hidden;
+                }
+
+                .free_shipping--qualified {
+                  background: #d4edda;
+                }
+
+                .free_shipping_text {
+                  position: relative;
+                  z-index: 2;
+                  font-size: 14px;
+                  text-align: center;
+                  margin: 0;
+                }
+
+                .frete_gratis {
+                  font-weight: bold;
+                  color: #28a745;
+                }
+
+                .shipping_bar-0, .shipping_bar-10, .shipping_bar-20, .shipping_bar-30, .shipping_bar-40, .shipping_bar-50, .shipping_bar-60, .shipping_bar-70, .shipping_bar-80, .shipping_bar-90, .shipping_bar-100 {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  height: 100%;
+                  background-color: #28a745;
+                  z-index: 1;
+                  transition: width 0.5s ease-in-out;
+                }
+
+                .shipping_bar-0 { width: 0%; }
+                .shipping_bar-10 { width: 10%; }
+                .shipping_bar-20 { width: 20%; }
+                .shipping_bar-30 { width: 30%; }
+                .shipping_bar-40 { width: 40%; }
+                .shipping_bar-50 { width: 50%; }
+                .shipping_bar-60 { width: 60%; }
+                .shipping_bar-70 { width: 70%; }
+                .shipping_bar-80 { width: 80%; }
+                .shipping_bar-90 { width: 90%; }
+                .shipping_bar-100 { width: 100%; }
+
+                .second_shipping_bar {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  height: 100%;
+                  width: 100%;
+                  background-color: rgba(255, 255, 255, 0.5);
+                  z-index: 0;
+                }
+              </style>
+
               {% if cart.total_price < min_for_shipping %}
 
                 {% assign remaining = min_for_shipping |  minus: cart.total_price %}
