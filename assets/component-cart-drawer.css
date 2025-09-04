@@ -453,49 +453,6 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   border-bottom-left-radius: 6px;
 }
 
-.shipping_bar-0 {
-  width: 0%;
-}
-
-.shipping_bar-10 {
-  width: 10%;
-}
-
-.shipping_bar-20 {
-  width: 20%;
-}
-
-.shipping_bar-30 {
-  width: 30%;
-}
-
-.shipping_bar-40 {
-  width: 40%;
-}
-
-.shipping_bar-50 {
-  width: 50%;
-}
-
-.shipping_bar-60 {
-  width: 60%;
-}
-
-.shipping_bar-70 {
-  width: 70%;
-}
-
-.shipping_bar-80 {
-  width: 80%;
-}
-
-.shipping_bar-90 {
-  width: 90%;
-}
-
-.shipping_bar-100 {
-  width: 100%;
-}
 
 .second_shipping_bar {
   background-color: rgba(0, 0, 0, 0.1);
