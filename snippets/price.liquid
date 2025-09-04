@@ -137,6 +137,49 @@
           , measurement: product.selected_or_first_available_variant.unit_price_measurement %}
       {%- endif -%}
       {%- if show_badges -%}
+
+
+        {% assign sale_badge_type = settings.sale_badge_type %}
+        {% assign sale_badge_bgcolor = settings.sale_badge_custom_background_color %}
+        {% assign sale_badge_textcolor = settings.sale_badge_custom_color %}
+        {% comment %}
+          color-{{ settings.sale_badge_color_scheme }}
+        {% endcomment %}
+
+        {% if sale_badge_type == "sale" %}
+
+          <span
+            id="Badge-{{ section_id }}-{{ product.id }}"
+            class="badge badge--bottom-left"
+            style="background-color: {{ sale_badge_bgcolor }}; color: {{ sale_badge_textcolor }};">
+            {{- 'products.product.on_sale' | t -}}
+          </span>
+
+        {% elsif sale_badge_type == "value" %}
+
+          {% assign sale_badge_value = product.compare_at_price | minus: product.price | money %}
+
+          <span
+            id="Badge-{{ section_id }}-{{ product.id }}"
+            class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+            style="background-color: {{ sale_badge_bgcolor }}; color: {{ sale_badge_textcolor }};">
+            Economize {{ sale_badge_value -}}
+          </span>
+
+        {% elsif sale_badge_type == "percent" %}
+
+          {% assign sale_badge_percent = product.compare_at_price | minus: product.price | times: 100 %}
+          {% assign sale_badge_percent = sale_badge_percent | divided_by: product.compare_at_price %}
+
+          <span
+            id="Badge-{{ section_id }}-{{ product.id }}"
+            class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+            style="background-color: {{ sale_badge_bgcolor }}; color: {{ sale_badge_textcolor }};">
+            -{{- sale_badge_percent -}}%
+          </span>
+        {% endif %}
+
+
         <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
           {{ 'products.product.on_sale' | t }}
         </span>
