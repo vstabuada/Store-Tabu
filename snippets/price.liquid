@@ -89,7 +89,7 @@
           </span>
         {%- endif -%}
       </div>
-      <div class="price__sale">
+      <div class="price__sale" style="display: flex; flex-direction: column">
         {%- unless product.price_varies == false and product.compare_at_price_varies %}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
           <span style="color: #aaa;">De
@@ -104,7 +104,6 @@
         {%- endunless -%}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
 
-        s
 
         <span class="price-item price-item--sale price-item--last">
           {{ money_price }}
