@@ -133,12 +133,44 @@
                 {{- 'products.product.sold_out' | t -}}
               </span>
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+
+            {% assign sale_badge_type = "percent" %}
+            {% comment %}
+              percent, value, text
+            {% endcomment %}
+          
+            {% if sale_badge_type == "sale" %}
+            
               <span
-                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                id="Badge-{{ section_id }}-{{ card_product.id }}"
                 class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
               >
                 {{- 'products.product.on_sale' | t -}}
               </span>
+
+              {% elsif sale_badge_type == "value" %}
+
+                {% assign sale_badge_value = card_product.compare_at_price | minus: card_product.price |  money %}
+
+                <span
+                  id="Badge-{{ section_id }}-{{ card_product.id }}"
+                  class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+                >
+                  Economize {{- sale_badge_value -}}
+                </span>
+
+              {% elsif sale_badge_type == "percent" %}
+
+                {% assign sale_badge_percent = card_product.compare_at_price | times: 100 |  divided_by: card_product.price |  round %}
+                
+                <span
+                  id="Badge-{{ section_id }}-{{ card_product.id }}"
+                  class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+                >
+                  -{{- sale_badge_percent -}}%
+                </span>
+              
+            {% endif %}
             {%- endif -%}
           </div>
         </div>
