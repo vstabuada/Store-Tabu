@@ -141,7 +141,13 @@
           {% elsif settings.enable_pix_discount %}
             ou
           {% endif %}
-          <span style="color: #333; font-size: 1.4em">{{ money_price }}</span>
+
+          {% if product.tags contains "Sem Desconto PIX" %}
+          {% elsif settings.enable_installments %}
+            {% assign card_price_size = "font-size: 1.4em" %}
+          {% endif %}
+
+          <span style="color: #333; {{card_price_size}}">{{ money_price }}</span>
           {% if settings.enable_installments %}
             <br>em até {{ installments -}}x de {{ installment_value | money }} sem juros
           {% endif %}
