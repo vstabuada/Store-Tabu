@@ -127,7 +127,7 @@
         {% assign installments = 12 %}
         {% assign installment_value = product.price | divided_by: installments %}
 
-        <span class="price-item price-item--sale price-item--last" style="color: #999; font-size: 0.9em;">
+        <span class="price-item price-item--sale price-item--last" style="color: #555; font-size: 0.9em;">
           ou {{ money_price }}<br>em até {{ installments -}}x de {{ installment_value | money }} sem juros
         </span>
       </div>
