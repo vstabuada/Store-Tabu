@@ -574,12 +574,12 @@
 
 
 .pix_price {
-  font-size: .8em;
+  font-size: 1em;
   color: #666666;
 }
 
 .pix_price span {
   font-weight: 600;
   color: #0a803f;
-  font-size: 1em;
+  font-size: 1.2em;
 }
