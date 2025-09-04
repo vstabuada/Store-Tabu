@@ -15,26 +15,8 @@
         "slide_YMfCyC": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/half-of-an-avocado.jpg",
+            "image": "shopify://shop_images/herobanner1.jpg",
             "image_overlay_opacity": 40,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "Veja tudo",
-            "link": "shopify://collections/all",
-            "button_style_secondary": true,
-            "show_text_box": false,
-            "box_align": "bottom-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-4"
-          }
-        },
-        "slide_H3FEQU": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/half-of-an-avocado.jpg",
-            "image_overlay_opacity": 10,
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -50,17 +32,16 @@
         }
       },
       "block_order": [
-        "slide_YMfCyC",
-        "slide_H3FEQU"
+        "slide_YMfCyC"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "medium",
+        "slide_height": "adapt_image",
         "slider_visual": "dots",
-        "auto_rotate": false,
-        "change_slides_speed": 3,
-        "image_behavior": "ambient",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
