@@ -52,26 +52,6 @@
     " style="display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem; position: relative;">
 
 
-    {% if product.tags contains "Sem Desconto PIX" %}
-
-    {% else %}
-
-      {% if settings.enable_pix_discount %}
-        {% assign pix_discount = settings.pix_discount_percentage %}
-        {% assign real_discount = product.price | times: pix_discount | divided_by: 100 %}
-
-
-        <div>
-          <span style="margin: 0;">
-            <span style=" font-weight: 600; color: #119252">{{ product.price | minus: real_discount | money }}</span>
-            no pix!</span>
-        </div>
-
-      {% endif %}
-
-    {% endif %}
-
-
     <div class="price__container">
       {%- comment -%}
         Explanation of description list:
@@ -85,7 +65,7 @@
               <span class="visually-hidden visually-hidden--inline">
                 {{- 'products.product.price.regular_price' | t -}}
               </span>
-              <span>
+              <span>de
                 <s class="price-item price-item--regular variant-item__old-price">
                   {% if settings.currency_code_enabled %}
                     {{ compare_at_price | money_with_currency }}
