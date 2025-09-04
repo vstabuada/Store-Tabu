@@ -583,3 +583,10 @@
   color: #0a803f;
   font-size: 1.2em;
 }
+
+@media screen and (max-width: 749px) {
+
+  .pix_price {
+    font-size: .8;
+  }
+}
