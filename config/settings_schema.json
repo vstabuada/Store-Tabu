@@ -619,7 +619,7 @@
       },
       {
         "type": "header",
-        "content": "PIX"
+        "content": "Pagamento"
       },
       {
         "type": "checkbox",
@@ -636,6 +636,21 @@
         "unit": "%",
         "label": "Desconto no PIX (%)",
         "default": 5
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_installments",
+        "label": "Ativar parcelamento",
+        "default": true
+      },
+      {
+        "type": "range",
+        "id": "installments",
+        "min": 1,
+        "max": 12,
+        "step": 1,
+        "label": "Número máximo de parcelas",
+        "default": 12
       }
     ]
   },
