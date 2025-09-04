@@ -115,16 +115,16 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   padding: 1.5rem 0;
 }
 
-cart-drawer-items.is-empty + .drawer__footer {
+cart-drawer-items.is-empty+.drawer__footer {
   display: none;
 }
 
-.drawer__footer > details {
+.drawer__footer>details {
   margin-top: -1.5rem;
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.2);
 }
 
-.drawer__footer > details[open] {
+.drawer__footer>details[open] {
   padding-bottom: 1.5rem;
 }
 
@@ -135,7 +135,7 @@ cart-drawer-items.is-empty + .drawer__footer {
   padding: 1.5rem 2.8rem 1.5rem 0;
 }
 
-.drawer__footer > details + .cart-drawer__footer {
+.drawer__footer>details+.cart-drawer__footer {
   padding-top: 1.5rem;
 }
 
@@ -264,7 +264,7 @@ cart-drawer-items {
   padding-top: 1rem;
 }
 
-.cart-drawer .cart-item > td + td {
+.cart-drawer .cart-item>td+td {
   padding-left: 1rem;
 }
 
@@ -280,7 +280,7 @@ cart-drawer-items {
   justify-content: flex-end;
 }
 
-.cart-drawer.cart-drawer .cart-item__price-wrapper > *:only-child {
+.cart-drawer.cart-drawer .cart-item__price-wrapper>*:only-child {
   margin-top: 0;
 }
 
@@ -305,7 +305,7 @@ cart-drawer-items {
   }
 }
 
-.cart-drawer__footer > * + * {
+.cart-drawer__footer>*+* {
   margin-top: 1rem;
 }
 
@@ -326,7 +326,7 @@ cart-drawer-items {
   word-break: break-word;
 }
 
-.cart-drawer details[open] > summary .icon-caret {
+.cart-drawer details[open]>summary .icon-caret {
   transform: rotate(180deg);
 }
 
@@ -349,26 +349,26 @@ cart-drawer-items {
   justify-content: flex-start;
 }
 
-.drawer__footer #dynamic-checkout-cart ul > li {
+.drawer__footer #dynamic-checkout-cart ul>li {
   flex-basis: calc(50% - 0.5rem) !important;
   margin: 0 !important;
 }
 
-.drawer__footer #dynamic-checkout-cart ul > li:only-child {
+.drawer__footer #dynamic-checkout-cart ul>li:only-child {
   flex-basis: 100% !important;
   margin-right: 0.5rem !important;
 }
 
 @media screen and (min-width: 750px) {
-  .drawer__footer #dynamic-checkout-cart ul > li {
+  .drawer__footer #dynamic-checkout-cart ul>li {
     flex-basis: calc(100% / 3 - 0.5rem) !important;
     margin: 0 !important;
   }
 
-  .drawer__footer #dynamic-checkout-cart ul > li:first-child:nth-last-child(2),
-  .drawer__footer #dynamic-checkout-cart ul > li:first-child:nth-last-child(2) ~ li,
-  .drawer__footer #dynamic-checkout-cart ul > li:first-child:nth-last-child(4),
-  .drawer__footer #dynamic-checkout-cart ul > li:first-child:nth-last-child(4) ~ li {
+  .drawer__footer #dynamic-checkout-cart ul>li:first-child:nth-last-child(2),
+  .drawer__footer #dynamic-checkout-cart ul>li:first-child:nth-last-child(2)~li,
+  .drawer__footer #dynamic-checkout-cart ul>li:first-child:nth-last-child(4),
+  .drawer__footer #dynamic-checkout-cart ul>li:first-child:nth-last-child(4)~li {
     flex-basis: calc(50% - 0.5rem) !important;
   }
 }
@@ -399,16 +399,112 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   margin-top: 0.8rem;
 }
 
-.cart-drawer .quantity-popover__info + .cart-item__error {
+.cart-drawer .quantity-popover__info+.cart-item__error {
   margin-top: 0.2rem;
 }
 
 @media screen and (min-width: 750px) {
-  .cart-drawer .cart-item__quantity--info quantity-popover > * {
+  .cart-drawer .cart-item__quantity--info quantity-popover>* {
     padding-left: 0;
   }
 
   .cart-drawer .cart-item__error {
     margin-left: 0;
   }
+}
+
+
+
+.free_shipping {
+  position: relative;
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.free_shipping--qualified {
+  background: #d4edda;
+}
+
+.free_shipping_text {
+  position: relative;
+  z-index: 2;
+  font-size: .8em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.frete_gratis {
+  font-weight: bold;
+  color: #28a745;
+  text-transform: uppercase;
+}
+
+.shipping_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  background-color: #28a745;
+  z-index: 1;
+  transition: width 0.5s ease-in-out;
+  border-bottom-left-radius: 6px;
+}
+
+.shipping_bar-0 {
+  width: 0%;
+}
+
+.shipping_bar-10 {
+  width: 10%;
+}
+
+.shipping_bar-20 {
+  width: 20%;
+}
+
+.shipping_bar-30 {
+  width: 30%;
+}
+
+.shipping_bar-40 {
+  width: 40%;
+}
+
+.shipping_bar-50 {
+  width: 50%;
+}
+
+.shipping_bar-60 {
+  width: 60%;
+}
+
+.shipping_bar-70 {
+  width: 70%;
+}
+
+.shipping_bar-80 {
+  width: 80%;
+}
+
+.shipping_bar-90 {
+  width: 90%;
+}
+
+.shipping_bar-100 {
+  width: 100%;
+}
+
+.second_shipping_bar {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  z-index: 0;
 }
