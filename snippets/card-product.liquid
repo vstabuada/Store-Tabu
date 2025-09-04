@@ -563,7 +563,7 @@
               percent, value, text
             {% endcomment %}
           
-            {% if sale_badge_type == "text" %}
+            {% if sale_badge_type == "sale" %}
             
               <span
                 id="Badge-{{ section_id }}-{{ card_product.id }}"
@@ -595,8 +595,6 @@
                 </span>
               
             {% endif %}
-
-
           {%- endif -%}
         </div>
       </div>
