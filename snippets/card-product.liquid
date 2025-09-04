@@ -134,12 +134,12 @@
               </span>
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
 
-            {% assign sale_badge_type = "sale" %} 
+            {% assign sale_badge_type = settings.sale_badge_type %} 
             {% comment %}
               percent, value, sale
             {% endcomment %}
-            {% assign sale_badge_bgcolor = "#000000" %}
-            {% assign sale_badge_textcolor = "#ffffff" %}
+            {% assign sale_badge_bgcolor = settings.sale_badge_custom_background_color %}
+            {% assign sale_badge_textcolor = settings.sale_badge_custom_color %}
             {% comment %}
               color-{{ settings.sale_badge_color_scheme }}
             {% endcomment %}
