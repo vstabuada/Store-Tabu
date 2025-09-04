@@ -25,7 +25,7 @@
   }
 </style>
 
-{% assign whatsapp_number = settings.whatsapp_number %}
+{% assign whatsapp_number = settings.whatsapp_number | strip | strip_newlines %}
 {% assign whatsapp_message = settings.whatsapp_message %}
 {% assign whatsapp_number_size = whatsapp_number | size %}
 
