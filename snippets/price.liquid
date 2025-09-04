@@ -124,9 +124,11 @@
 
         {% endif %}
 
+        {% assign installments = 12 %}
+        {% assign installment_value = product.price | divided_by: installments %}
 
         <span class="price-item price-item--sale price-item--last">
-          ou {{ money_price }}
+          ou {{ money_price }}<br>em até {{ installments -}}x de {{ installment_value }} sem juros
         </span>
       </div>
       {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
