@@ -325,11 +325,14 @@
             {%- endif -%}
           </div>
 
-          {% assign pix_discount = settings.pix_discount_percentage %}
+          {% if enable_pix_discount %}
+                      {% assign pix_discount = settings.pix_discount_percentage %}
           {% assign real_discount = card_product.price | times: pix_discount |  divided_by: 100  %}
 
           <div class="pix_price">ou por apenas <span>{{ card_product.price | minus: real_discount | money }}</span> no pix!</div>
  
+          {% endif %}
+
         </div>
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
         {% if quick_add == 'standard' %}
