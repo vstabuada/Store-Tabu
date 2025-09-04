@@ -325,7 +325,7 @@
             {%- endif -%}
           </div>
 
-          {% if enable_pix_discount == true %}
+          {% if settings.enable_pix_discount %}
             {% assign pix_discount = settings.pix_discount_percentage %}
             {% assign real_discount = card_product.price | times: pix_discount |  divided_by: 100  %}
 
