@@ -30,7 +30,7 @@
 
 {% capture whatsapp_link %}
     {%- if whatsapp_number | size < 12 -%}
-        https://wa.me/+55
+        {{whatsapp_number | size}}https://wa.me/+55
     {%- else -%}
         https://wa.me/
     {%- endif -%}
