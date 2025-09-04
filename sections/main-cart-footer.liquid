@@ -63,7 +63,7 @@
                   <h2 class="remaining_for_shipping">
                     {% if cart.total_price > 0 %}
                       {% if cart.total_price < free_shipping_value %}
-                        
+                        {{ free_shipping_value | minus: cart.total_price }}
                       {% endif %}
                     {% endif %}
                   </h2>
