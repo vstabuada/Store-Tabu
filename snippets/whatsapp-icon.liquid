@@ -25,15 +25,15 @@
   }
 </style>
 
-{% assign whatsapp_number = "5511944563800" %}
-{% assign whatsapp_message = "Bom dia, eu sou o valdimir!" %}
+{% assign whatsapp_number = settings.whatsapp_number %}
+{% assign whatsapp_message = settings.whatsapp_message %}
 {% assign whatsapp_number_size = whatsapp_number | size %}
 
 {% capture whatsapp_link %}
     {% if whatsapp_number_size < 12 %} 
         https://wa.me/+55
     {%- else -%}
-        https://wa.me/
+        https://wa.me/ 
     {%- endif -%}
     {{ whatsapp_number }}?text={{ whatsapp_message | url_encode }}
 {% endcapture %}
