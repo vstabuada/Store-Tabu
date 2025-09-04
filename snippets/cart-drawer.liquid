@@ -585,7 +585,7 @@
             {% if settings.toggle_free_shipping %}
   
               {% assign min_for_shipping = settings.minimum_for_free_shipping |  times: 100 %} 
-              <h1>{{min_for_shipping}}</h1>
+
               {% if cart.total_price > 0 %}
 
                 {% if cart.total_price < min_for_shipping %}
