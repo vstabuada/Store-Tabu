@@ -141,7 +141,7 @@
           {% elsif settings.enable_pix_discount %}
             ou
           {% endif %}
-          <span style="color: #333;">{{ money_price }}</span>
+          <span style="color: #333; font-size: 1.4em">{{ money_price }}</span>
           {% if settings.enable_installments %}
             <br>em até {{ installments -}}x de {{ installment_value | money }} sem juros
           {% endif %}
