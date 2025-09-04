@@ -515,8 +515,15 @@
 
             {% assign min_for_shipping = 2000 %}
 
-            {% if cart.total_price %}
-              
+            {% if cart.total_price > 0 %}
+
+              {% if cart.total_price < min_for_shipping %}
+                              <div class="free_shipping">
+                <div></div>
+                <div></div>
+                <h2></h2>
+              </div>
+              {% endif %}
             {% endif %}
 
 
