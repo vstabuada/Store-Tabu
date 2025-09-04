@@ -334,7 +334,7 @@
           {% assign pix_discount = 10 %}
           {% assign real_discount = card_product.price | times: pix_discount |  divided_by: 100  %}
 
-          <div class="pix_price">ou por apenas {{ card_product.price | minus: real_discount | money }} no pix!</div>
+          <div class="pix_price">ou por apenas <span id="pix_price_value">{{ card_product.price | minus: real_discount | money }}</span> no pix!</div>
  
 
 
