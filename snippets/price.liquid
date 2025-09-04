@@ -138,7 +138,7 @@
 
         <span class="price-item price-item--sale price-item--last" style="color: #777; font-size: 0.9em;">
           {% if product.tags contains "Sem Desconto PIX" %}
-          {% else %}
+          {% elsif settings.enable_pix_discount %}
             ou
           {% endif %}
           <span style="color: #333;">{{ money_price }}</span>
