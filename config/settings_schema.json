@@ -1425,7 +1425,7 @@
         "type": "text",
         "id": "whatsapp_number",
         "label": "Número do WhatsApp",
-        "placeholder": "Apenas o número com DDD. Ex: 11888889999"
+        "placeholder": "Apenas o número com DDD. Ex: 11911112222"
       },
       {
         "type": "text",
