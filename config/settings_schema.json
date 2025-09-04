@@ -1263,6 +1263,18 @@
         "id": "sold_out_badge_color_scheme",
         "label": "t:settings_schema.badges.settings.sold_out_badge_color_scheme.label",
         "default": "scheme-3"
+      },
+      {
+        "type": "color_background",
+        "id": "sale_badge_custom_background_color",
+        "label": "Cor de fundo personalizada do selo de promoção",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "sale_badge_custom_color",
+        "label": "Cor personalizada do texto do selo de promoção",
+        "default": "#000000"
       }
     ]
   },
