@@ -92,7 +92,7 @@
         "slide_LCE8tw"
       ],
       "custom_css": [
-        ".slider-buttons {background-color: #555;}"
+        ".slider-buttons {background-color: #676060;}"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
