@@ -1416,6 +1416,22 @@
         "id": "social_vimeo_link",
         "label": "t:settings_schema.social-media.settings.social_vimeo_link.label",
         "placeholder": "t:settings_schema.social-media.settings.social_vimeo_link.info"
+      },
+      {
+        "type": "header",
+        "content": "WhatsApp"
+      },
+      {
+        "type": "text",
+        "id": "whatsapp_number",
+        "label": "Número do WhatsApp",
+        "placeholder": "Apenas números, com DDD. Exemplo: 11888889999"
+      },
+      {
+        "type": "text",
+        "id": "whatsapp_message",
+        "label": "Mensagem padrão que será exibida no chat",
+        "placeholder": "Olá! Gostaria de saber mais sobre os seus produtos..."
       }
     ]
   },
