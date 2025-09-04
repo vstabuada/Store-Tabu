@@ -29,8 +29,8 @@
 {% assign whatsapp_message = "Bom dia, eu sou o valdimir!" %}
 
 {% capture whatsapp_link %}
-    {% if whatsapp_number | size < 12 %} 
-        https://wa.me/+55
+    {% if "5511944563800" | size < 12 %} 
+        {{"5511944563800" | size}}https://wa.me/+55
     {%- else -%}
         https://wa.me/
     {%- endif -%}
