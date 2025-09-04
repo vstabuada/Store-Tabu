@@ -92,15 +92,18 @@
       <div class="price__sale" style="display: flex; flex-direction: column">
         {%- unless product.price_varies == false and product.compare_at_price_varies %}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-          <span style="color: #aaa;">De
-            <s class="price-item price-item--regular" style="color: #999">
-              {% if settings.currency_code_enabled %}
-                {{ compare_at_price | money_with_currency }}
-              {% else %}
-                {{ compare_at_price | money }}
-              {% endif %}
-            </s>por
-          </span>
+          {% if product.compare_at_price %}
+            <span style="color: #aaa;">De
+              <s class="price-item price-item--regular" style="color: #999">
+                {% if settings.currency_code_enabled %}
+                  {{ compare_at_price | money_with_currency }}
+                {% else %}
+                  {{ compare_at_price | money }}
+                {% endif %}
+              </s>por
+            </span>
+          {% endif %}
+
         {%- endunless -%}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
 
