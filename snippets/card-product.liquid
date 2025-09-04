@@ -329,7 +329,15 @@
               {% endif %}
             {%- endif -%}
           </div>
-          <div style="background-color: red;">asgfas</div>
+
+
+          {% assign pix_discount = 10 |  divided_by: 100 %}
+
+          <div style="background-color: red;">ou por apenas {{ card_product.price | times: pix_discount | money }} no pix!</div>
+
+
+
+
         </div>
         {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
         {% if quick_add == 'standard' %}
