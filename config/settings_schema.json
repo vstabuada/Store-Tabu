@@ -1259,7 +1259,7 @@
         "default": "scheme-5"
       },
       {
-        "type": "color_background",
+        "type": "color",
         "id": "sale_badge_custom_background_color",
         "label": "Cor de fundo personalizada do selo de promoção",
         "default": "#ffffff"
