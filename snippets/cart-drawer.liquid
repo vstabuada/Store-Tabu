@@ -514,74 +514,7 @@
           </div>
 
 
-              <style>
-                .free_shipping {
-                  position: relative;
-                  background: #f3f3f3;
-                  border-radius: 8px;
-                  padding: 10px 20px;
-                  margin-bottom: 20px;
-                  overflow: hidden;
-                }
-
-                .free_shipping--qualified {
-                  background: #d4edda;
-                }
-
-                .free_shipping_text {
-                  position: relative;
-                  z-index: 2;
-                  font-size: .8em;
-                  text-align: center;
-                  margin-top: 10px;
-                }
-
-                .frete_gratis {
-                  font-weight: bold;
-                  color: #28a745;
-                  text-transform: uppercase;
-                }
-
-                .shipping_bar {
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  height: 10px;
-                  background-color: #28a745;
-                  z-index: 1;
-                  transition: width 0.5s ease-in-out;
-                  border-bottom-left-radius: 6px;
-                }
-
-                .shipping_bar-0 { width: 0%; }
-                .shipping_bar-10 { width: 10%; }
-                .shipping_bar-20 { width: 20%; }
-                .shipping_bar-30 { width: 30%; }
-                .shipping_bar-40 { width: 40%; }
-                .shipping_bar-50 { width: 50%; }
-                .shipping_bar-60 { width: 60%; }
-                .shipping_bar-70 { width: 70%; }
-                .shipping_bar-80 { width: 80%; }
-                .shipping_bar-90 { width: 90%; }
-                .shipping_bar-100 { width: 100%; }
-
-                .second_shipping_bar {
-                  background-color: rgba(0, 0, 0, 0.1);
-                  border-bottom-left-radius: 6px;
-                  border-bottom-right-radius: 6px;
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  height: 10px;
-                  width: 100%;
-                  z-index: 0;
-                }
-              </style>
-
             
-            {% comment %}
-              o numero acima esta em centavos (2000,00)
-            {% endcomment %}
             {% if settings.toggle_free_shipping %}
   
               {% assign min_for_shipping = settings.minimum_for_free_shipping |  times: 100 %} 
@@ -597,7 +530,7 @@
                   {% assign rounded_percent = rounded_percent | times: 10 %}
 
                   <div class="free_shipping">
-                    <div class="shipping_bar shipping_bar-{{rounded_percent}}"> </div>
+                    <div class="shipping_bar" style="width: {{rounded_percent}}%;"> </div>
                     <div class="second_shipping_bar"> </div>
                     <h2 class="free_shipping_text">Adicione mais {{remaining | money}} para ganhar <span class="frete_gratis">frete grátis</span>!</h2>
                   </div>
