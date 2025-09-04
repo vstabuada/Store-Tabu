@@ -134,9 +134,9 @@
               </span>
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
 
-            {% assign sale_badge_type = "value" %}
+            {% assign sale_badge_type = "percent" %}
             {% comment %}
-              percent, value, text
+              percent, value, sale
             {% endcomment %}
           
             {% if sale_badge_type == "sale" %}
