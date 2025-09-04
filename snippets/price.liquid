@@ -142,7 +142,7 @@
             ou
           {% endif %}
 
-          {% if product.tags contains "Sem Desconto PIX" or "Sem Parcelamento" %}
+          {% if product.tags contains "Sem Desconto PIX" %}
           {% elsif settings.enable_installments %}
             {% assign card_price_size = "font-size: 1.4em" %}
           {% endif %}
