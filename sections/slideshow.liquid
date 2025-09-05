@@ -136,7 +136,7 @@
             {%- if forloop.first %}
 
 
-              {% if block.settings.smaller_image != blank %}
+              {% if block.settings.smaller_image %}
                 <img
                   class="slideshow_desktop_image"
                   src="{{ block.settings.image | image_url: width: 3840 }}"
@@ -153,7 +153,7 @@
             {%- else -%}
 
 
-              {% if block.settings.smaller_image != blank %}
+              {% if block.settings.smaller_image %}
                 <img
                   class="slideshow_desktop_image"
                   src="{{ block.settings.image | image_url: width: 3840 }}"
@@ -163,10 +163,7 @@
                   src="{{ block.settings.smaller_image | image_url: width: 768 }}"
                   alt="">
               {% else %}
-                <img
-                  class="slideshow_desktop_image"
-                  src="{{ block.settings.image | image_url: width: 3840 }}"
-                  alt="">
+                <img src="{{ block.settings.image | image_url: width: 3840 }}" alt="">
               {% endif %}
             {%- endif -%}
           {%- else -%}
