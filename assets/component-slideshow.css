@@ -205,22 +205,22 @@ slideshow-component:not(.page-width) .slider-buttons {
 
 
 
-.slideshow__media.slideshow_mobile_image {
+.media>img.slideshow_mobile_image {
   display: none !important;
 }
 
 
-.slideshow__media.slideshow_desktop_image {
+.media>img.slideshow_desktop_image {
   display: block !important;
 }
 
 @media screen and (max-width: 768px) {
-  .slideshow__media.slideshow_mobile_image {
+  .media>img.slideshow_mobile_image {
     display: block !important;
   }
 
 
-  .slideshow__media.slideshow_desktop_image {
+  .media>img.slideshow_desktop_image {
     display: none !important;
   }
 
