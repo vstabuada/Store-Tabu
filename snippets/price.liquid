@@ -97,15 +97,18 @@
       <style>
         .price__sale {
           display: flex;
-          flex-direction: column
+          flex-direction: column;
+        }
+        .compare_at_price__text {
+          color: #aaa;
         }
       </style>
 
-      <div class="price__sale" style="">
+      <div class="price__sale">
         {%- unless product.price_varies == false and product.compare_at_price_varies %}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
           {% if product.compare_at_price %}
-            <span style="color: #aaa;">De
+            <span class="compare_at_price__text" style="">De
               <s class="price-item price-item--regular" style="color: #999">
                 {% if settings.currency_code_enabled %}
                   {{ compare_at_price | money_with_currency }}
