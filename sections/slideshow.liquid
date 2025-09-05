@@ -135,28 +135,37 @@
             -%}
             {%- if forloop.first %}
 
-              <img
-                class="slideshow_desktop_image"
-                src="{{ block.settings.image | image_url: width: 3840 }}"
-                alt="">
 
               {% if block.settings.smaller_image != blank %}
+                <img
+                  class="slideshow_desktop_image"
+                  src="{{ block.settings.image | image_url: width: 3840 }}"
+                  alt="">
                 <img
                   class="slideshow_mobile_image"
                   src="{{ block.settings.smaller_image | image_url: width: 768 }}"
                   alt="">
+              {% else %}
+
+                <img src="{{ block.settings.image | image_url: width: 3840 }}" alt="">
               {% endif %}
 
             {%- else -%}
 
-              <img
-                class="slideshow_desktop_image"
-                src="{{ block.settings.image | image_url: width: 3840 }}"
-                alt="">
+
               {% if block.settings.smaller_image != blank %}
+                <img
+                  class="slideshow_desktop_image"
+                  src="{{ block.settings.image | image_url: width: 3840 }}"
+                  alt="">
                 <img
                   class="slideshow_mobile_image"
                   src="{{ block.settings.smaller_image | image_url: width: 768 }}"
+                  alt="">
+              {% else %}
+                <img
+                  class="slideshow_desktop_image"
+                  src="{{ block.settings.image | image_url: width: 3840 }}"
                   alt="">
               {% endif %}
             {%- endif -%}
