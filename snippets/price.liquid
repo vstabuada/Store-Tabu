@@ -110,7 +110,9 @@
           color: #119252;
           font-size: 1.4em;
         }
-
+        .price__line_break {
+          margin: 4px;
+        }
 
       </style>
 
@@ -144,7 +146,7 @@
 
             <div>
               <span style="margin: 0;">
-                <span class="pix__price" style=" ">{{ product.price | minus: real_discount | money }}</span>
+                <span class="pix__price">{{ product.price | minus: real_discount | money }}</span>
                 no pix
               </span>
             </div>
@@ -156,7 +158,7 @@
         {% assign installments = settings.installments %}
         {% assign installment_value = product.price | divided_by: installments %}
 
-        <hr style="margin: 4px;">
+        <hr class="price__line_break" style="">
 
         <span class="price-item price-item--sale price-item--last" style="color: #777; font-size: 0.9em;">
           {% if product.tags contains "Sem Desconto PIX" %}
