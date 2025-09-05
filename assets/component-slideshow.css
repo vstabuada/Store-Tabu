@@ -213,7 +213,7 @@ slideshow-component:not(.page-width) .slider-buttons {
     height: auto;
   }
 
-  .slideshow__desktop_image .media {
+  .slideshow__desktop_image {
     display: none !important;
   }
 }
