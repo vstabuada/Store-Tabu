@@ -102,14 +102,24 @@
         .compare_at_price__text {
           color: #aaa;
         }
+        .compare_at_price__text s {
+          color: #999
+        }
+        .pix__price {
+          font-weight: 600;
+          color: #119252;
+          font-size: 1.4em;
+        }
+
+
       </style>
 
       <div class="price__sale">
         {%- unless product.price_varies == false and product.compare_at_price_varies %}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
           {% if product.compare_at_price %}
-            <span class="compare_at_price__text" style="">De
-              <s class="price-item price-item--regular" style="color: #999">
+            <span class="compare_at_price__text">De
+              <s class="price-item price-item--regular">
                 {% if settings.currency_code_enabled %}
                   {{ compare_at_price | money_with_currency }}
                 {% else %}
@@ -134,8 +144,9 @@
 
             <div>
               <span style="margin: 0;">
-                <span style=" font-weight: 600; color: #119252; font-size: 1.4em;">{{ product.price | minus: real_discount | money }}</span>
-                no pix</span>
+                <span class="pix__price" style=" ">{{ product.price | minus: real_discount | money }}</span>
+                no pix
+              </span>
             </div>
 
           {% endif %}
