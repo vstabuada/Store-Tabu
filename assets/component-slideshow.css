@@ -211,12 +211,25 @@ slideshow-component:not(.page-width) .slider-buttons {
 
 
 .slideshow__media.slideshow_desktop_image {
-  display: block !important;
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .slideshow__media.slideshow_mobile_image {
-    display: block !important;
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
   }
 
 
