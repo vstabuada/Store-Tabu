@@ -139,16 +139,16 @@
               }}
               {% if block.settings.smaller_image %}
                 {{
-                  block.settings.smaller_image | image_url: width: 3840 | image_tag: class: "slideshow_mobile_image", height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
+                  block.settings.smaller_image | image_url: width: 768 | image_tag: class: "slideshow_mobile_image", height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
                 }}
               {% endif %}
             {%- else -%}
               {{
-                block.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths
+                block.settings.image | image_url: width: 3840 | image_tag: class: "slideshow_desktop_image", loading: 'lazy', height: height, sizes: sizes, widths: widths
               }}
               {% if block.settings.smaller_image %}
                 {{
-                  block.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths
+                  block.settings.smaller_image | image_url: width: 768 | image_tag: class: "slideshow_mobile_image", loading: 'lazy', height: height, sizes: sizes, widths: widths
                 }}
               {% endif %}
             {%- endif -%}
