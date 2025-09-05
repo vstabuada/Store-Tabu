@@ -134,6 +134,23 @@
               endif
             -%}
 
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+
+                const mobileImages = document.querySelectorAll('.slideshow_mobile_image')
+                const desktopImages = document.querySelectorAll('.slideshow_desktop_image')
+
+                function toggleImages() {
+                  if (window.innerWidth <= 768) {
+                    mobileImages.forEach(img => img.style.display = 'block');
+                    desktopImages.forEach(img => img.style.display = 'none');
+                  } else {
+                    mobileImages.forEach(img => img.style.display = 'none');
+                    desktopImages.forEach(img => img.style.display = 'block');
+                  }
+                }
+              })
+            </script>
 
             {%- if forloop.first %}
               {{
@@ -155,23 +172,6 @@
               {% endif %}
             {%- endif -%}
 
-            <script>
-              document.addEventListener('DOMContentLoaded', function() {
-
-                const mobileImages = document.querySelectorAll('.slideshow_mobile_image')
-                const desktopImages = document.querySelectorAll('.slideshow_desktop_image')
-
-                function toggleImages() {
-                  if (window.innerWidth <= 768) {
-                    mobileImages.forEach(img => img.style.display = 'block');
-                    desktopImages.forEach(img => img.style.display = 'none');
-                  } else {
-                    mobileImages.forEach(img => img.style.display = 'none');
-                    desktopImages.forEach(img => img.style.display = 'block');
-                  }
-                }
-              })
-            </script>
 
           {%- else -%}
             {%- assign placeholder_slide = forloop.index | modulo: 2 -%}
