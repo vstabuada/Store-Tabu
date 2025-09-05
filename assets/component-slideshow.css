@@ -203,17 +203,17 @@ slideshow-component:not(.page-width) .slider-buttons {
 }
 
 .slideshow_mobile_image {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 768px) {
   .slideshow_mobile_image {
-    display: block;
+    display: block !important;
     width: 100%;
     height: auto;
   }
 
   .slideshow__desktop_image {
-    display: none;
+    display: none !important;
   }
 }
