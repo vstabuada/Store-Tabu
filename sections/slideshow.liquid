@@ -134,27 +134,24 @@
               endif
             -%}
 
-            <style>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
 
+                const mobileImages = document.querySelectorAll('.slideshow_mobile_image')
+                const desktopImages = document.querySelectorAll('.slideshow_desktop_image')
 
-              .slideshow_mobile_image {
-                display: none !important;
-              }
-
-              @media screen and (max-width: 768px) {
-                .slideshow_mobile_image {
-                  display: block !important;
-                  width: 100%;
-                  height: auto;
+                function toggleImages() {
+                  if (window.innerWidth <= 768) {
+                    mobileImages.forEach(img => img.style.display = 'block');
+                    desktopImages.forEach(img => img.style.display = 'none');
+                  } else {
+                    mobileImages.forEach(img => img.style.display = 'none');
+                    desktopImages.forEach(img => img.style.display = 'block');
+                  }
                 }
+              })
+            </script>
 
-                .slideshow__slide .slideshow__image-wrapper .slideshow__image {
-                  display: none !important;
-                }
-              }
-
-
-            </style>
             {%- if forloop.first %}
               {{
                 block.settings.image | image_url: width: 3840 | image_tag: class: "slideshow_desktop_image", height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
