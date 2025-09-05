@@ -139,13 +139,23 @@
                   block.settings.image | image_url: width: 3840 | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
                 }}
               </div>
-
+              <div class="slideshow__smaller_image">
+                {{
+                  block.settings.image | image_url: width: 768 | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
+                }}
+              </div>
             {%- else -%}
               <div class="slideshow__image">
                 {{
                   block.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths
                 }}
+              </div>
+              <div class="slideshow__smaller_image">
 
+                {{
+                  block.settings.image | image_url: width: 768 | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths
+                }}
+              </div>
             {%- endif -%}
           {%- else -%}
             {%- assign placeholder_slide = forloop.index | modulo: 2 -%}
