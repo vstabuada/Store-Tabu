@@ -208,7 +208,7 @@ slideshow-component:not(.page-width) .slider-buttons {
 
 @media screen and (max-width: 768px) {
   .slideshow_mobile_image {
-    display: none;
+    display: block;
     width: 100%;
     height: auto;
   }
