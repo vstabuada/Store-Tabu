@@ -141,7 +141,7 @@
               </div>
               <div class="slideshow__smaller_image">
                 {{
-                  block.settings.image | image_url: width: 3840 | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
+                  block.settings.image | image_url: width: 768 | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
                 }}
               </div>
             {%- else -%}
@@ -149,11 +149,10 @@
                 {{
                   block.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths
                 }}
-                {{
-                  block.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths
-                }}
                 <div class="slideshow__smaller_image"></div>
-
+                {{
+                  block.settings.image | image_url: width: 768 | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths
+                }}
               </div>
             {%- endif -%}
           {%- else -%}
