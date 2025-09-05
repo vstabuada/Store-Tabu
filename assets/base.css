@@ -74,23 +74,6 @@
   --shadow-visible: var(--media-shadow-visible);
 }
 
-
-.slideshow_mobile_image {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .slideshow_mobile_image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .slideshow__desktop_image {
-    display: none;
-  }
-}
-
 /* base */
 
 .page-width {
