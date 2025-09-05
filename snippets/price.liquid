@@ -93,7 +93,15 @@
           {% endcomment %}
         {%- endif -%}
       </div>
-      <div class="price__sale" style="display: flex; flex-direction: column">
+
+      <style>
+        .price__sale {
+          display: flex;
+          flex-direction: column
+        }
+      </style>
+
+      <div class="price__sale" style="">
         {%- unless product.price_varies == false and product.compare_at_price_varies %}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
           {% if product.compare_at_price %}
