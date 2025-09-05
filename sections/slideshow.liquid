@@ -135,13 +135,25 @@
             -%}
             {%- if forloop.first %}
 
-              <img src="{{ block.settings.image | image_url: width: 3840 }}" alt="">
-
+              <img
+                class="slideshow_desktop_image"
+                src="{{ block.settings.image | image_url: width: 3840 }}"
+                alt="">
+              <img
+                class="slideshow_mobile_image"
+                src="{{ block.settings.smaller_image | image_url: width: 768 }}"
+                alt="">
 
             {%- else -%}
 
-              <img src="{{ block.settings.image | image_url: width: 3840 }}" alt="">
-
+              <img
+                class="slideshow_desktop_image"
+                src="{{ block.settings.image | image_url: width: 3840 }}"
+                alt="">
+              <img
+                class="slideshow_mobile_image"
+                src="{{ block.settings.smaller_image | image_url: width: 768 }}"
+                alt="">
 
             {%- endif -%}
           {%- else -%}
