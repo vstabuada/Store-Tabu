@@ -113,6 +113,10 @@
         .price__line_break {
           margin: 4px;
         }
+        .raw__price {
+          color: #777;
+          font-size: 0.9em;
+        }
 
       </style>
 
@@ -158,9 +162,9 @@
         {% assign installments = settings.installments %}
         {% assign installment_value = product.price | divided_by: installments %}
 
-        <hr class="price__line_break" style="">
+        <hr class="price__line_break">
 
-        <span class="price-item price-item--sale price-item--last" style="color: #777; font-size: 0.9em;">
+        <span class="price-item price-item--sale price-item--last raw__price">
           {% if product.tags contains "Sem Desconto PIX" %}
           {% elsif settings.enable_pix_discount %}
             ou
