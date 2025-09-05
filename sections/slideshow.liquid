@@ -142,16 +142,16 @@
 
                 function toggleImages() {
                   if (window.innerWidth <= 768) {
-                    mobileImages.forEach(img => img.style.display = 'block');
-                    desktopImages.forEach(img => img.style.display = 'none');
+                    mobileImages.forEach(img => img.style.display = 'block')
+                    desktopImages.forEach(img => img.style.display = 'none')
                   } else {
-                    mobileImages.forEach(img => img.style.display = 'none');
-                    desktopImages.forEach(img => img.style.display = 'block');
+                    mobileImages.forEach(img => img.style.display = 'none')
+                    desktopImages.forEach(img => img.style.display = 'block')
                   }
                 }
               })
-              toggleImages();
-              window.addEventListener('resize', toggleImages);
+              toggleImages()
+              window.addEventListener('resize', toggleImages)
             </script>
 
             {%- if forloop.first %}
