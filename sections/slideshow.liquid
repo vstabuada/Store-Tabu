@@ -139,10 +139,13 @@
                 class="slideshow_desktop_image"
                 src="{{ block.settings.image | image_url: width: 3840 }}"
                 alt="">
-              <img
-                class="slideshow_mobile_image"
-                src="{{ block.settings.smaller_image | image_url: width: 768 }}"
-                alt="">
+
+              {% if block.settings.smaller_image != blank %}
+                <img
+                  class="slideshow_mobile_image"
+                  src="{{ block.settings.smaller_image | image_url: width: 768 }}"
+                  alt="">
+              {% endif %}
 
             {%- else -%}
 
@@ -150,11 +153,12 @@
                 class="slideshow_desktop_image"
                 src="{{ block.settings.image | image_url: width: 3840 }}"
                 alt="">
-              <img
-                class="slideshow_mobile_image"
-                src="{{ block.settings.smaller_image | image_url: width: 768 }}"
-                alt="">
-
+              {% if block.settings.smaller_image != blank %}
+                <img
+                  class="slideshow_mobile_image"
+                  src="{{ block.settings.smaller_image | image_url: width: 768 }}"
+                  alt="">
+              {% endif %}
             {%- endif -%}
           {%- else -%}
             {%- assign placeholder_slide = forloop.index | modulo: 2 -%}
