@@ -202,18 +202,26 @@ slideshow-component:not(.page-width) .slider-buttons {
   transform: scale(0.8);
 }
 
-.slideshow_mobile_image {
+
+
+
+.slideshow__image.slideshow_mobile_image {
   display: none !important;
 }
 
+
+.slideshow__image.slideshow_desktop_image {
+  display: block !important;
+}
+
 @media screen and (max-width: 768px) {
-  .slideshow_mobile_image {
+  .slideshow__image.slideshow_mobile_image {
     display: block !important;
-    width: 100%;
-    height: auto;
   }
 
-  .slideshow__desktop_image {
+
+  .slideshow__image.slideshow_desktop_image {
     display: none !important;
   }
+
 }
