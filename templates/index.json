@@ -16,6 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/herobanner1_53965974-cb9f-4d5b-9583-ca6325f1e4b2.jpg",
+            "smaller_image": "shopify://shop_images/herobanner1-smaller.jpg",
             "image_overlay_opacity": 50,
             "heading": "Red Dead Redemption 2",
             "heading_size": "h1",
