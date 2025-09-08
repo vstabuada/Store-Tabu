@@ -113,7 +113,7 @@
         "collection": "all",
         "products_to_show": 8,
         "title": "Featured products",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -135,53 +135,44 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_PxLV9i": {
-      "type": "image-with-text",
+    "collection_list_wqjPge": {
+      "type": "collection-list",
       "blocks": {
-        "heading_TzEqDL": {
-          "type": "heading",
+        "featured_collection_pJ6EnY": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "<strong>Avocado</strong>",
-            "heading_size": "h0"
+            "collection": "hydrogen"
           }
         },
-        "text_MxWMdk": {
-          "type": "text",
+        "featured_collection_tpe8Ac": {
+          "type": "featured_collection",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
+            "collection": "automated-collection"
           }
         },
-        "button_cg3bR7": {
-          "type": "button",
+        "featured_collection_ac4NQf": {
+          "type": "featured_collection",
+          "disabled": true,
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
+            "collection": ""
           }
         }
       },
       "block_order": [
-        "heading_TzEqDL",
-        "text_MxWMdk",
-        "button_cg3bR7"
+        "featured_collection_pJ6EnY",
+        "featured_collection_tpe8Ac",
+        "featured_collection_ac4NQf"
       ],
-      "custom_css": [
-        "button {border-radius: 10px;}"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
+      "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "image": "shopify://shop_images/half-of-an-avocado.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-bb6bd643-89ca-424e-8cbb-b109bd65720d",
-        "color_scheme": "scheme-c0c0e51b-8860-45bd-8b83-fcf19b44b035",
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-5",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -190,6 +181,6 @@
   "order": [
     "slideshow_8TJR4g",
     "featured_collection",
-    "image_with_text_PxLV9i"
+    "collection_list_wqjPge"
   ]
 }
