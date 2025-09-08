@@ -198,6 +198,12 @@
           color-{{ settings.sale_badge_color_scheme }}
         {% endcomment %}
         {% if compare_at_price > price and available %}
+
+          <br>
+          {% comment %}
+            Sale badge
+          {% endcomment %}
+
           {% if sale_badge_type == "sale" %}
 
             <span
