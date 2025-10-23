@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/storetabu.png",
+    "logo": "shopify://shop_images/Pngtree_letter_t_logo_6854722.png",
     "logo_width": 90,
     "favicon": "shopify://shop_images/storetabu.png",
     "type_header_font": "assistant_n4",
@@ -198,8 +198,8 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#313030",
-          "background_gradient": "radial-gradient(rgba(182, 180, 180, 1), rgba(77, 70, 63, 1) 100%)",
+          "background": "#590000",
+          "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
           "button_label": "#000000",

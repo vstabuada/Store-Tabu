@@ -92,9 +92,7 @@
         "slide_z4Tqf9",
         "slide_LCE8tw"
       ],
-      "custom_css": [
-        ".slider-buttons {background-color: #676060;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "full_bleed",
@@ -112,7 +110,7 @@
       "settings": {
         "collection": "all",
         "products_to_show": 8,
-        "title": "Featured products",
+        "title": "Popular",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -122,7 +120,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-1",
         "image_ratio": "portrait",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -165,11 +163,11 @@
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "title": "Collections",
+        "title": "Coleções",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-1",
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
