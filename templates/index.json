@@ -112,7 +112,91 @@
         "products_to_show": 8,
         "title": "Popular",
         "heading_size": "h1",
-        "description": "",
+        "description": "<p>Os itens mais vendidos da nossa loja!</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_nNTJty": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "jogos",
+        "products_to_show": 8,
+        "title": "Jogos",
+        "heading_size": "h1",
+        "description": "<p>Aqueles que todo mundo ama!</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_9pkXGe": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "gift-cards",
+        "products_to_show": 8,
+        "title": "Gift Cards",
+        "heading_size": "h1",
+        "description": "<p>Para turbinar sua biblioteca!</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_UxzgCh": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "snowboards",
+        "products_to_show": 8,
+        "title": "Snowboards",
+        "heading_size": "h1",
+        "description": "<p>Para deslizar com estilo na neve! E para preencher a lista de produtos...</p>",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 6,
@@ -136,37 +220,36 @@
     "collection_list_wqjPge": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_pJ6EnY": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hydrogen"
-          }
-        },
-        "featured_collection_tpe8Ac": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "automated-collection"
-          }
-        },
         "featured_collection_ac4NQf": {
           "type": "featured_collection",
-          "disabled": true,
           "settings": {
-            "collection": ""
+            "collection": "gift-cards"
+          }
+        },
+        "featured_collection_PzJhTg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jogos"
+          }
+        },
+        "featured_collection_N3AeRQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "snowboards"
           }
         }
       },
       "block_order": [
-        "featured_collection_pJ6EnY",
-        "featured_collection_tpe8Ac",
-        "featured_collection_ac4NQf"
+        "featured_collection_ac4NQf",
+        "featured_collection_PzJhTg",
+        "featured_collection_N3AeRQ"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "Coleções",
         "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
         "color_scheme": "scheme-1",
         "show_view_all": false,
         "columns_mobile": "2",
@@ -179,6 +262,9 @@
   "order": [
     "slideshow_8TJR4g",
     "featured_collection",
+    "featured_collection_nNTJty",
+    "featured_collection_9pkXGe",
+    "featured_collection_UxzgCh",
     "collection_list_wqjPge"
   ]
 }
