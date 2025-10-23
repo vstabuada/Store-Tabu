@@ -140,7 +140,7 @@
       "type": "featured-collection",
       "settings": {
         "collection": "all",
-        "products_to_show": 8,
+        "products_to_show": 14,
         "title": "Popular",
         "heading_size": "h1",
         "description": "<p>Os itens mais vendidos da nossa loja!</p>",
