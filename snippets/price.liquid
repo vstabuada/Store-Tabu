@@ -165,7 +165,7 @@
         {% endif %}
 
         {% assign installments = settings.installments %}
-        {% assign installment_value = product.price | divided_by: installments %}
+        {% assign installment_value = target.price | divided_by: installments %}
 
         <hr class="price__line_break">
 
