@@ -202,7 +202,7 @@
         "description": "<p>Para turbinar sua biblioteca!</p>",
         "show_description": false,
         "description_style": "body",
-        "columns_desktop": 6,
+        "columns_desktop": 5,
         "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": true,
