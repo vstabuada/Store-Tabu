@@ -150,12 +150,12 @@
 
           {% if settings.enable_pix_discount %}
             {% assign pix_discount = settings.pix_discount_percentage %}
-            {% assign real_discount = product.price | times: pix_discount | divided_by: 100 %}
+            {% assign real_discount = target.price | times: pix_discount | divided_by: 100 %}
 
 
             <div>
               <span class="pix__price_text">
-                <span class="pix__price">{{ product.price | minus: real_discount | money }}</span>
+                <span class="pix__price">{{ target.price | minus: real_discount | money }}</span>
                 no pix
               </span>
             </div>
