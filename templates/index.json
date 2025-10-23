@@ -288,6 +288,94 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_3JWgEH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_U6fPpF": {
+          "type": "heading",
+          "settings": {
+            "heading": "O que eu fiz?",
+            "heading_size": "h0"
+          }
+        },
+        "text_V4EHph": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Falando sobre o que eu fiz nessa demonstração extremamente simples de loja e-commerce, eu fiz alguns poucos desafios para ter meus primeiros contatos com <strong>Liquid </strong>e <strong>Shopify</strong>, já tive bastante contato com <strong>HTML</strong>, <strong>CSS </strong>e <strong>JavaScript</strong> mas nunca profissional, meu foco anterior era <strong>React.JS </strong>mas atualmente estou focando nessa área, segue a lista:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_U6fPpF",
+        "text_V4EHph"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multirow_7NzhxC": {
+      "type": "multirow",
+      "blocks": {
+        "row_QDepUR": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2.png",
+            "caption": "",
+            "heading": "Botão flutuante WhatsApp",
+            "text": "<p>Fiz um botão flutuante de WhatsApp com número e mensagem padrão configuráveis, como você pode ver na tela abaixo.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_3YDYma": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_WRcUg3": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_QDepUR",
+        "row_3YDYma",
+        "row_WRcUg3"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -297,6 +385,8 @@
     "featured_collection_nNTJty",
     "featured_collection_9pkXGe",
     "featured_collection_UxzgCh",
-    "collection_list_wqjPge"
+    "collection_list_wqjPge",
+    "rich_text_3JWgEH",
+    "multirow_7NzhxC"
   ]
 }
