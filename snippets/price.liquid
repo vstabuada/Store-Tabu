@@ -132,9 +132,9 @@
             <span class="compare_at_price__text">De
               <s class="price-item price-item--regular">
                 {% if settings.currency_code_enabled %}
-                  {{ compare_at_price | money_with_currency }}
+                  {{ target.compare_at_price | money_with_currency }}
                 {% else %}
-                  {{ compare_at_price | money }}
+                  {{ target.compare_at_price | money }}
                 {% endif %}
               </s>por
             </span>
