@@ -9,6 +9,37 @@
  */
 {
   "sections": {
+    "rich_text_cdpKMn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iG9QEF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Os melhores jogos para seu tempo de qualidade estão na Store Tabu",
+            "heading_size": "h1"
+          }
+        },
+        "text_pgcWGK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Jogos, gift cards, snowboards, tudo o que um verdadeiro gamer precisa para descansar e apertar o play.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iG9QEF",
+        "text_pgcWGK"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 16,
+        "padding_bottom": 24
+      }
+    },
     "slideshow_8TJR4g": {
       "type": "slideshow",
       "blocks": {
@@ -260,6 +291,7 @@
     }
   },
   "order": [
+    "rich_text_cdpKMn",
     "slideshow_8TJR4g",
     "featured_collection",
     "featured_collection_nNTJty",
