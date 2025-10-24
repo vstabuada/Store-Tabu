@@ -351,7 +351,7 @@
             "image": "shopify://shop_images/Screenshot_6.png",
             "caption": "",
             "heading": "Selo de Promoção",
-            "text": "<p>Fiz algumas alternativas para o selo de promoção dos produtos, permitindo alternar entre a porcentagem de desconto, a quantia de economia e o selo padrão escrito \"Sale\". Também é possível configurar separadamente a cor do fundo e da fonte dos selos.</p>",
+            "text": "<p>Fiz algumas alternativas para o selo de promoção dos produtos, permitindo alternar entre a porcentagem de desconto, a quantia de economia (\"Economize R$ 29,90\") e o selo padrão escrito \"Sale\". Também é possível configurar separadamente a cor do fundo e da fonte dos selos.</p>",
             "button_label": "",
             "button_link": ""
           }
