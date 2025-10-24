@@ -329,7 +329,7 @@
             "image": "shopify://shop_images/Screenshot_5.png",
             "caption": "",
             "heading": "Botão flutuante WhatsApp",
-            "text": "<p>Fiz um botão flutuante de WhatsApp com número e mensagem padrão configuráveis, como você pode ver na tela abaixo.</p>",
+            "text": "<p>Fiz um botão flutuante de WhatsApp com número e mensagem padrão customizáveis, como você pode ver na tela abaixo.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -340,7 +340,7 @@
             "image": "shopify://shop_images/Screenshot_4.png",
             "caption": "",
             "heading": "Meta para frete grátis",
-            "text": "<p>Fiz um sistema de meta de valor para receber frete grátis na compra, que pode ser visualizado no carrinho ao adicionar algum item, o valor pode ser configurado.</p>",
+            "text": "<p>Fiz um sistema de meta de valor para receber frete grátis na compra, que pode ser visualizado no carrinho ao adicionar algum item, o valor pode ser customizável.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -351,7 +351,18 @@
             "image": "shopify://shop_images/Screenshot_6.png",
             "caption": "",
             "heading": "Selo de Promoção",
-            "text": "<p>Fiz algumas alternativas para o selo de promoção dos produtos, permitindo alternar entre a porcentagem de desconto, a quantia de economia (\"Economize R$ 29,90\") e o selo padrão escrito \"Sale\". Também é possível configurar separadamente a cor do fundo e da fonte dos selos.</p>",
+            "text": "<p>Fiz algumas alternativas para o selo de promoção dos produtos, permitindo alternar entre a porcentagem de desconto, a quantia de economia (\"Economize R$ 29,90\") e o selo padrão escrito \"Sale\". Também é possível customizar separadamente a cor do fundo e da fonte dos selos.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_D4dncP": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_7.png",
+            "caption": "",
+            "heading": "Desconto PIX e Parcelamento",
+            "text": "<p>Também fiz esse sistema de desconto com pagamento PIX em porcentagem customizável e um sistema de parcelamento com cálculo de preço de parcela automático de acordo com a quantia de parcelas máximas.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -360,7 +371,8 @@
       "block_order": [
         "row_QDepUR",
         "row_3YDYma",
-        "row_WRcUg3"
+        "row_WRcUg3",
+        "row_D4dncP"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
