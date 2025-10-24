@@ -366,13 +366,25 @@
             "button_label": "",
             "button_link": ""
           }
+        },
+        "row_6EpeaC": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_8.png",
+            "caption": "",
+            "heading": "Otimização de banner",
+            "text": "<p>E por fim, também implementei a possibilidade de enviar uma imagem menor às customizações do carrossel de banner principal da página, para otimização de dispositivos mobile. A imagem é substituída pela menor quando a largura da tela é menor que 768px.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "row_QDepUR",
         "row_3YDYma",
         "row_WRcUg3",
-        "row_D4dncP"
+        "row_D4dncP",
+        "row_6EpeaC"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
