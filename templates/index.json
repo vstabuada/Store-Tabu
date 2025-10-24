@@ -337,11 +337,11 @@
         "row_3YDYma": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_3.png",
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "image": "shopify://shop_images/Screenshot_4.png",
+            "caption": "",
+            "heading": "Meta para frete grátis",
+            "text": "<p>Fiz um sistema de meta de valor para receber frete grátis na compra, que pode ser visualizado no carrinho ao adicionar algum item, o valor pode ser configurado.</p>",
+            "button_label": "",
             "button_link": ""
           }
         },
