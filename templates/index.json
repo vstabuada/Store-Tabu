@@ -348,10 +348,11 @@
         "row_WRcUg3": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "image": "shopify://shop_images/Screenshot_6.png",
+            "caption": "",
+            "heading": "Selo de Promoção",
+            "text": "<p>Fiz algumas alternativas para o selo de promoção dos produtos, permitindo alternar entre a porcentagem de desconto, a quantia de economia e o selo padrão escrito \"Sale\". Também é possível configurar separadamente a cor do fundo e da fonte dos selos.</p>",
+            "button_label": "",
             "button_link": ""
           }
         }
